@@ -1,7 +1,7 @@
 
 const Main = () => {
     return (
-        <h2 className="App">Under Construction.</h2>
+        <h2 className="App">Under Construction...</h2>
     )
 };
 
