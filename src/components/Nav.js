@@ -1,8 +1,8 @@
 
-const Header = () => {
+const Nav = () => {
     return (
         <h1 className="App-header">Jomonty</h1>
     )
 };
 
-export default Header
+export default Nav
