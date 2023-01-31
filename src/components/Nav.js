@@ -2,14 +2,19 @@ import { Link } from 'react-router-dom';
 
 const Nav = () => {
     return (
-        <>
-            <h1 className="App-header">Jomonty</h1>
-            <nav>
-                <Link to="/">Home</Link>
-                <Link to="/Portfolio">Portfolio</Link>
-                <Link to="/Contact">Contact</Link>
-            </nav>
-        </>
+        <header>
+        <nav>
+            <hgroup>
+                <h1>jomonty</h1>
+                <h2>portfolio</h2>
+            </hgroup>
+            <ul>
+                <li><Link to="/" role="button" >Home</Link></li>
+                <li><Link to="/Portfolio" role="button" class="outline" >Portfolio</Link></li>
+                <li><Link to="/Contact" role="button" class="secondary">Contact</Link></li>
+            </ul>
+        </nav>
+        </header>
     )
 };
 

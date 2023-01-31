@@ -1,7 +1,7 @@
 
 const Home = () => {
     return (
-        <h2 className="App">Under Construction...</h2>
+        <h2>Under Construction...</h2>
     )
 };
 
