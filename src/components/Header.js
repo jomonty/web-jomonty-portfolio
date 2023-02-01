@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom';
 import ExtLinkButtonNav from './ExtLinkButtonNav';
 
 const Header = () => {
-    
+
     return (
-        <header align="center">
-            <div>
+        <header align="center" className="container">
+            <div className="conatiner">
                 <hgroup>
                     <h1>JOSHMONTGOMERY.DEV</h1>
                     <h5>jomonty</h5>

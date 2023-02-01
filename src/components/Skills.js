@@ -2,7 +2,7 @@
 const Skills = () => {
 
     return (
-        <main>
+        <main className="container">
             <h2>Skills under construction...</h2>
         </main>
     )
