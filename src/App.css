@@ -35,3 +35,36 @@
   --switch-color: var(--primary-inverse);
   --switch-checked-background-color: var(--primary);
 }
+
+@media (min-width: 576px) {
+  body > header,
+  body > main,
+  body > footer,
+  section {
+    --block-spacing-vertical: calc(var(--spacing) * 1.1);
+  }
+}
+@media (min-width: 768px) {
+  body > header,
+  body > main,
+  body > footer,
+  section {
+    --block-spacing-vertical: calc(var(--spacing) * 1.2);
+  }
+}
+@media (min-width: 992px) {
+  body > header,
+  body > main,
+  body > footer,
+  section {
+    --block-spacing-vertical: calc(var(--spacing) * 1.3);
+  }
+}
+@media (min-width: 1200px) {
+  body > header,
+  body > main,
+  body > footer,
+  section {
+    --block-spacing-vertical: calc(var(--spacing) * 1.4);
+  }
+}

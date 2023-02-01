@@ -7,12 +7,10 @@ const Footer = () => {
         <div>
             <ExtLinkButtonNav />
             <nav>
-                <ul></ul>
                 <ul>
                     <li><Link to="/" >Home</Link></li>
                     <li><Link to="/Projects" >Projects</Link></li>
                 </ul>
-                <ul></ul>
             </nav>
         </div>
         </footer>

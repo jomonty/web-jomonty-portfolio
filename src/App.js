@@ -1,9 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Nav from './components/Nav';
-import Footer from './components/Footer';
+import Header from './components/Header';
 import Home from './components/Home';
 import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
+import Skills from './components/Skills';
 import '@picocss/pico';
 import './App.css';
 
@@ -12,13 +11,13 @@ function App() {
     <body>
       
       <Router>
-      <Nav />
+      <Header />
         <Routes>
           <Route path="/" element={ <Home /> } />
-          <Route path="/Projects" element={ <Portfolio /> } />
-          {/* <Route path="/Contact" element={ <Contact /> } /> */}
+          <Route path="/projects" element={ <Portfolio /> } />
+          <Route path="/skills" element={ <Skills /> } />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </body>
   );
