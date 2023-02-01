@@ -1,22 +1,25 @@
-import './App.css';
-import { Routes, Route } from 'react-router-dom';
-import Nav from './components/Nav';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
 import Home from './components/Home';
 import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
+import Skills from './components/Skills';
+import '@picocss/pico';
+import './App.css';
 
 function App() {
   return (
-    <div>
-      {/* <Router> */}
-        <Nav />
+    <body>
+      
+      <Router>
+      <Header />
         <Routes>
           <Route path="/" element={ <Home /> } />
-          <Route path="/Portfolio" element={ <Portfolio /> } />
-          <Route path="/Contact" element={ <Contact /> } />
+          <Route path="/projects" element={ <Portfolio /> } />
+          <Route path="/skills" element={ <Skills /> } />
         </Routes>
-      {/* </Router> */}
-    </div>
+        {/* <Footer /> */}
+      </Router>
+    </body>
   );
 }
 
