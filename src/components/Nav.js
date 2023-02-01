@@ -1,21 +1,19 @@
 import { Link } from 'react-router-dom';
+import ExtLinkButtonNav from './ExtLinkButtonNav';
 
 const Nav = () => {
     return (
-        <header>
-        <nav>
-            <hgroup>
-                <h1>jomonty</h1>
-                <h2>portfolio</h2>
-            </hgroup>
-            <ul>
-                <li><Link to="/" role="button" >Home</Link></li>
-                <li><Link to="/Portfolio" role="button" class="outline" >Portfolio</Link></li>
-                <li><Link to="/Contact" role="button" class="secondary">Contact</Link></li>
-            </ul>
-        </nav>
+        <header align="center">
+            <div>
+                <hgroup>
+                    <h1>JOSHMONTGOMERY.DEV</h1>
+                    <h4>jomonty</h4>
+                    <h4>Portfolio</h4>
+                </hgroup>
+            </div>
+
         </header>
     )
 };
 
-export default Nav
+export default Nav;

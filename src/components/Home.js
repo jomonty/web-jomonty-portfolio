@@ -1,7 +1,9 @@
 
 const Home = () => {
     return (
-        <h2>Under Construction...</h2>
+        <main>
+            <h2>Under Construction...</h2>
+        </main>
     )
 };
 

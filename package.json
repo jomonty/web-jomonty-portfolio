@@ -1,6 +1,6 @@
 {
   "name": "web-jomonty-portfolio",
-  "homepage": "https://jomonty.github.io/web-jomonty-portfolio",
+  "homepage": "/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
