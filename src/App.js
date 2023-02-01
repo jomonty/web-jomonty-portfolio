@@ -6,6 +6,7 @@ import Skills from './components/Skills';
 import '@picocss/pico';
 import './App.css';
 
+
 function App() {
   return (
     <body>
@@ -17,7 +18,6 @@ function App() {
           <Route path="/projects" element={ <Portfolio /> } />
           <Route path="/skills" element={ <Skills /> } />
         </Routes>
-        {/* <Footer /> */}
       </Router>
     </body>
   );

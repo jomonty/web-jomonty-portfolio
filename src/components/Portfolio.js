@@ -1,7 +1,7 @@
 
 const Portfolio = () => {
     return (
-        <main>
+        <main className="container">
             <h2>Portfolio Under Construction...</h2>
         </main>
     )

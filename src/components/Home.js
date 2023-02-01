@@ -1,7 +1,7 @@
 
 const Home = () => {
     return (
-        <main >
+        <main className="container">
             {/* <h2>Home Under Construction...</h2> */}
             <h3>About</h3>
             <p>Hi! My name is Josh Montgomery, and I'm a Glasgow based software developer.</p>

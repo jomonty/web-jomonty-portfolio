@@ -36,35 +36,52 @@
   --switch-checked-background-color: var(--primary);
 }
 
+/* Fix font sizing on mobile */
+@media (min-width: 350px) {
+  :root {
+    --font-size: 12px;
+  }
+}
+
 @media (min-width: 576px) {
-  body > header,
-  body > main,
-  body > footer,
-  section {
-    --block-spacing-vertical: calc(var(--spacing) * 1.1);
+  :root {
+    --font-size: 17px;
   }
 }
 @media (min-width: 768px) {
-  body > header,
-  body > main,
-  body > footer,
-  section {
-    --block-spacing-vertical: calc(var(--spacing) * 1.2);
+  :root {
+    --font-size: 18px;
   }
 }
 @media (min-width: 992px) {
-  body > header,
-  body > main,
-  body > footer,
-  section {
-    --block-spacing-vertical: calc(var(--spacing) * 1.3);
+  :root {
+    --font-size: 19px;
   }
 }
 @media (min-width: 1200px) {
-  body > header,
+  :root {
+    --font-size: 20px;
+  }
+}
+
+/* Fix padding and margin */
+@media (min-width: 350px) {
+  body > header {
+    --block-spacing-vertical: calc(var(--spacing) * 3);
+  }
   body > main,
   body > footer,
   section {
-    --block-spacing-vertical: calc(var(--spacing) * 1.4);
+    --block-spacing-vertical: calc(var(--spacing) * 2.5);
+  }
+}
+@media (min-width: 576px) {
+  /* body > header {
+    --block-spacing-vertical: calc(var(--spacing) * 1):
+  } */
+  body > main, 
+  body > footer, 
+  section {
+    --block-spacing-vertical: calc(var(--spacing) * 1.5);
   }
 }
