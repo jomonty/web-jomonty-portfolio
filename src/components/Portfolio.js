@@ -1,38 +1,28 @@
-import { isBindExpression } from '@babel/types';
 import { useState } from 'react';
 
 import PortfolioNav from './PortfolioNav';
+import ProjectSingle from './ProjectSingle';
+import Projects from '../data/Projects';
+
 
 const Portfolio = () => {
 
-    const projects = [
-        {
-            id: 1,
-            name: 'Project 1'
-        },
-        {
-            id: 2,
-            name: 'Project 2'
-        },
-        {
-            id: 3,
-            name: 'Project 3'
-        }
-    ]
+    const [selectedProjectID, setSelectedProject] = useState(Projects[0].id)
 
-    const [selectedProject, setSelectedProject] = useState(projects[0].id)
+    const selectedProject = Projects.filter(project => selectedProjectID === project.id).at(0);
 
-
-
-    const portfolioNavNodes = projects.map((project, index) => {
+    const portfolioNavNodes = Projects.filter(project => project.active === true)
+    .map((project, index) => {
         return (
             <PortfolioNav 
                 key={index} 
                 project={project} 
-                selected={selectedProject === project.id}
+                selected={selectedProjectID === project.id}
                 setSelectedProject={setSelectedProject}/>
         )
-    })    
+    })
+
+
     
     return (
         <main className="container">
@@ -41,7 +31,8 @@ const Portfolio = () => {
                     {portfolioNavNodes}
                 </ul>
             </nav>
-            <h2>Portfolio Under Construction...</h2>
+            {/* <h2>Portfolio Under Construction...</h2> */}
+            <ProjectSingle project={selectedProject} />
         </main>
     )
 };
