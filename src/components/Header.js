@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import ExtLinkButtonNav from './ExtLinkButtonNav';
+import ContactButtons from './ContactButtons';
 import Personal from '../data/Personal';
 
 const Header = () => {
@@ -12,7 +12,7 @@ const Header = () => {
                     <h5>{Personal.subheader}</h5>
                 </hgroup>
                 <nav>
-                    <ExtLinkButtonNav />
+                    <ContactButtons />
                     <ul>
                         <li><Link to="/" >Home</Link></li>
                         <li><Link to="/projects" >Projects</Link></li>

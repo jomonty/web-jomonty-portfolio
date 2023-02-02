@@ -1,5 +1,5 @@
 
-const ExtLinkButtonNav = () => {
+const ContactButtons = () => {
 
     return (
             <nav>
@@ -46,4 +46,4 @@ const ExtLinkButtonNav = () => {
     )
 };
 
-export default ExtLinkButtonNav;
+export default ContactButtons;
