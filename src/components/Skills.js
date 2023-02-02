@@ -4,7 +4,7 @@ import Personal from '../data/Personal';
 
 const Skills = () => {
 
-    const paragraphNodes = Personal.homeContent.map((paragraph, index) => {
+    const paragraphNodes = Personal.skillContent.map((paragraph, index) => {
         return (
             <p key={index}>{paragraph}</p>
         )

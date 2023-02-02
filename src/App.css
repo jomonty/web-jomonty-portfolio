@@ -69,6 +69,7 @@
   body > header {
     --block-spacing-vertical: calc(var(--spacing) * 3);
   }
+  
   body > main,
   body > footer,
   section {
@@ -100,11 +101,25 @@
 }
 
 .project-screenshot {
-  margin: 2rem 1rem 2rem 1rem;
+  margin: 1rem 1rem 2rem 1rem;
 }
 
-@media (min-width: 992pc) {
+@media (min-width: 992px) {
   .project-screenshot {
-    margin: 5rem 1rem 5rem 1rem;
+    margin: 1rem 1rem 4rem 1rem;
   }
+}
+
+.about-image-div {
+  margin: 1rem 1rem 2rem 1rem;
+}
+
+@media (min-width: 992px) {
+  .about-image-div {
+    margin: 1rem 1rem 4rem 1rem;
+  }
+}
+
+.about-image {
+  border-radius: 1rem;
 }
