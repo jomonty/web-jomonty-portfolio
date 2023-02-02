@@ -13,7 +13,7 @@ const Home = () => {
             <h3>{Personal.title}</h3>
 
             <div align="center" className="about-image-div">
-                <img src={Personal.homeImage} width="30%" className="about-image"/>
+                <img src={Personal.homeImage} width="30%" className="about-image" alt="about-image"/>
             </div>
 
             {paragraphNodes}
