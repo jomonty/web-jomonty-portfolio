@@ -1,9 +1,19 @@
+import TechIconList from './TechIconList';
+import Tech from '../data/Tech';
+import Personal from '../data/Personal';
 
 const Skills = () => {
 
+    const paragraphNodes = Personal.skillContent.map((paragraph, index) => {
+        return (
+            <p key={index}>{paragraph}</p>
+        )
+    })
+
     return (
         <main className="container">
-            <h2>Skills under construction...</h2>
+            <TechIconList tech={Tech}/>
+            {paragraphNodes}
         </main>
     )
 }
