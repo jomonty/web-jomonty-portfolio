@@ -11,7 +11,7 @@ const ProjectSingle = ({ project }) => {
     })
 
     return (
-        <>
+        <div>
             <h3>
                 {project.name}
                 <span> - </span>
@@ -19,10 +19,10 @@ const ProjectSingle = ({ project }) => {
             </h3>
             <TechIconList tech={project.tech} />
             <div align="center" className="project-screenshot">
-                <img src={project.image} width="100%"/>
+                <img src={project.image} alt={`${project.name} screenshot`} width="100%"/>
             </div>
             {paragraphNodes}
-        </>
+        </div>
     )
 }
 

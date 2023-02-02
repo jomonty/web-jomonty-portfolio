@@ -31,7 +31,6 @@ const Portfolio = () => {
                     {portfolioNavNodes}
                 </ul>
             </nav>
-            {/* <h2>Portfolio Under Construction...</h2> */}
             <ProjectSingle project={selectedProject} />
         </main>
     )
