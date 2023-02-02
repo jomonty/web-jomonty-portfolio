@@ -72,7 +72,7 @@
   body > main,
   body > footer,
   section {
-    --block-spacing-vertical: calc(var(--spacing) * 2.5);
+    --block-spacing-vertical: calc(var(--spacing) * 1);
   }
 }
 @media (min-width: 576px) {
@@ -82,6 +82,6 @@
   body > main, 
   body > footer, 
   section {
-    --block-spacing-vertical: calc(var(--spacing) * 1.5);
+    --block-spacing-vertical: calc(var(--spacing) * 0);
   }
 }
