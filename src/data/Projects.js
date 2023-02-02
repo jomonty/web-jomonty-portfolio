@@ -9,7 +9,7 @@ const Projects = [
         image: "/portfolio-images/the_little_gym_1.png",
         description: [
             "A full stack app build with Python, Flask, PostgreSQL, HTML & CSS with CRUD functionality to allow a gym to manage memberships, classes, and the registration of members to classes.",
-            "This was my first end to end full stack app and I really enjoyed designing and building it, I managed to squeeze in a few extensions over the MVP and I was really proud of the result! We have a few restrictions to keep us to the Python/Flask stack such as no JS, no ORM, no prebuilt CSS libraries.",
+            "This was my first end to end full stack app and I really enjoyed designing and building it. We have a few restrictions to keep us to the Python/Flask stack such as no JS, no ORM, no prebuilt CSS libraries.",
             "I designed the database in PostgreSQL, database handling and interaction in Python with the psycopg2 library, route handling with Flask, templates with Jinja, styling with CSS and unit tests with Pythons unittest module. The logic in the controller/router was by far the most challenging though most enjoyable part of the project.",
             "Full details of the brief are available in the GitHub repo's README."
             
