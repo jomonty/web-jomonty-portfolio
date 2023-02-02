@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import ExtLinkButtonNav from './ExtLinkButtonNav';
+import Personal from '../data/Personal';
 
 const Header = () => {
 
@@ -7,8 +8,8 @@ const Header = () => {
         <header align="center" className="container">
             <div className="conatiner">
                 <hgroup>
-                    <h1>JOSHMONTGOMERY.DEV</h1>
-                    <h5>jomonty</h5>
+                    <h1>{Personal.header}</h1>
+                    <h5>{Personal.subheader}</h5>
                 </hgroup>
                 <nav>
                     <ExtLinkButtonNav />
