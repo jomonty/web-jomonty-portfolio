@@ -16,6 +16,8 @@ const ProjectSingle = ({ project }) => {
                 {project.name}
                 <span> - </span>
                 <a href={project.github} target="_blank" rel="noreferrer">GitHub</a>
+                <span>{project.url ? " - " : ""}</span>
+                <a href={project.url ? project.url : ""} target="_blank" rel="noreferrer">{project.url ? project.url_display : ""}</a>
             </h3>
             <TechIconList tech={project.tech} />
             <div align="center" className="project-screenshot">
