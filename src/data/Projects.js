@@ -10,7 +10,7 @@ const Projects = [
         url_display: "joinpickup.co",
         image: "/portfolio-images/pickup_1.png",
         description: [
-            "For my final project at Codeclan, I worked with 2 other students to product pickup, a community space for litter picking events with user authentication, event creation and a comment system, and continuously updating statistics on communities, events and users. This was a full stack app made using Java, Spring Boot, PostgreSQL on the backend with Javascript, React and Tailwind on the frontend.",
+            "For my final project at Codeclan, I worked with 2 other students to produce pickup, a community space for litter picking events with user authentication, event creation and a comment system, and continuously updating statistics on communities, events and users. This was a full stack app made using Java, Spring Boot, PostgreSQL on the backend with Javascript, React and Tailwind on the frontend.",
             "Our primary goal was to build a fully functional app, and have both the front and the backend hosted. We achieved this with vercel for the frontend, and neon postgres with a Digital Ocean droplet hosting a java application for the backend.",
             "This project was incredible to work on, from conception through planning and development, it was filled with challenges and I enjoyed it immensely. Early in our planning process I built out an API specifcation using swagger to enable the front and backend to be developed concurrently.", 
             <span><a target="_blank" rel="noreferrer" href='https://app.swaggerhub.com/apis/jomonty_cs_swagger/pickup_v2/1.0.0'>pickup API docs - SwaggerHub</a></span>,
