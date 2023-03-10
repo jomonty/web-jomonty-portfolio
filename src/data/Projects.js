@@ -4,20 +4,24 @@ const Projects = [
     {
         id: 1,
         active: true,
-        name: 'The Little Gym',
-        github: "https://github.com/jomonty/python_project_gym_app",
-        image: "/portfolio-images/the_little_gym_1.png",
+        name: 'pickup',
+        github: "https://github.com/kelsiesmurphy/pickup",
+        url: "https://www.joinpickup.co",
+        url_display: "joinpickup.co",
+        image: "/portfolio-images/pickup_1.png",
         description: [
-            "A full stack app build with Python, Flask, PostgreSQL, HTML & CSS with CRUD functionality to allow a gym to manage memberships, classes, and the registration of members to classes.",
-            "This was my first end to end full stack app and I really enjoyed designing and building it. We have a few restrictions to keep us to the Python/Flask stack such as no JS, no ORM, no prebuilt CSS libraries.",
-            "I designed the database in PostgreSQL, database handling and interaction in Python with the psycopg2 library, route handling with Flask, templates with Jinja, styling with CSS and unit tests with Pythons unittest module. The logic in the controller/router was by far the most challenging though most enjoyable part of the project.",
-            "Full details of the brief are available in the GitHub repo's README."
-            
+            "For my final project at Codeclan, I worked with 2 other students to produce pickup, a community space for litter picking events with user authentication, event creation and a comment system, and continuously updating statistics on communities, events and users. This was a full stack app made using Java, Spring Boot, PostgreSQL on the backend with Javascript, React and Tailwind on the frontend.",
+            "Our primary goal was to build a fully functional app, and have both the front and the backend hosted. We achieved this with vercel for the frontend, and neon postgres with a Digital Ocean droplet hosting a java application for the backend.",
+            "This project was incredible to work on, from conception through planning and development, it was filled with challenges and I enjoyed it immensely. Early in our planning process I built out an API specifcation using swagger to enable the front and backend to be developed concurrently.", 
+            <span><a target="_blank" rel="noreferrer" href='https://app.swaggerhub.com/apis/jomonty_cs_swagger/pickup_v2/1.0.0'>pickup API docs - SwaggerHub</a></span>,
+            "I planned and developed the entirety of the server, learning loads about Java and Spring Boot along the way. Hosting was it's own challenge, but I'm super proud to have managed to get it online and have a working demo.",
+            "Full details of the project and my team are available on the GitHub repo's README."
         ],
-        tech: ['python', 'flask', 'postgresql', 'html5', 'css3'].map(tech => {
+        tech: ['java', 'spring', 'javascript', 'react', 'html5', 'css3'].map(tech => {
             return Tech.find(element => element.name === tech);
         })
     },
+
     {
         id: 2,
         active: true,
@@ -35,15 +39,25 @@ const Projects = [
             return Tech.find(element => element.name === tech);
         })
     },
+
     {
         id: 3,
-        active: false,
-        name: 'Project 3',
-        github: "https://githib.com/jomonty/",
-        image: "",
-        description: [],
-        tech: []
-    }
+        active: true,
+        name: 'The Little Gym',
+        github: "https://github.com/jomonty/python_project_gym_app",
+        image: "/portfolio-images/the_little_gym_1.png",
+        description: [
+            "A full stack app build with Python, Flask, PostgreSQL, HTML & CSS with CRUD functionality to allow a gym to manage memberships, classes, and the registration of members to classes.",
+            "This was my first end to end full stack app and I really enjoyed designing and building it. We have a few restrictions to keep us to the Python/Flask stack such as no JS, no ORM, no prebuilt CSS libraries.",
+            "I designed the database in PostgreSQL, database handling and interaction in Python with the psycopg2 library, route handling with Flask, templates with Jinja, styling with CSS and unit tests with Pythons unittest module. The logic in the controller/router was by far the most challenging though most enjoyable part of the project.",
+            "Full details of the brief are available in the GitHub repo's README."
+            
+        ],
+        tech: ['python', 'flask', 'postgresql', 'html5', 'css3'].map(tech => {
+            return Tech.find(element => element.name === tech);
+        })
+    },
+
 ]
 
 export default Projects;
